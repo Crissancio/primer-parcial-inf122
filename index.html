@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parcial</title>
+</head>
+<body>
+    <div class="main">
+        <div class="profile-info">
+            <figure class="perfil-background">
+                <img src="./assets/images/perfil_picture.jpeg" alt="perfil-img">
+            </figure>
+            <div class="profile-description">
+                <h1 class="name-profile">Victor Alvarado</h1>
+                <p class="job-description">Software Engineer</p>
+                <div class="social-network">
+                    <a href="https://github.com/">
+                        <img src="./assets/icons/github.svg" alt="github">
+                    </a>
+                    <a href="https://twitter.com/">
+                        <img src="./assets/icons/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <img src="./assets/icons/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img src="./assets/icons/youtube.svg" alt="youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="profile-facts">
+                <p class="facts-box">7<br>Years of work<br>experience</p>
+                <p class="facts-box">50+<br>Completed<br>projests</p>
+                <p class="facts-box">20+<br>Satisfied<br>customers</p>
+        </div>
+        <div class="profile-buttons">
+            <button type="button" onclick="mostrarMensaje()" class="cv-button">
+                <p>Download CV</p>
+                <img src="./assets/icons/Bottom Alignment.svg" alt="download-img">
+            </button>
+            <button type="button" onclick="red()" class="contact-button">
+                    Contact me
+            </button>
+        </div>
+        <div class="tabs-buttons">
+            <div class="portfolio">
+                <p>Portfolio</p>
+            </div>
+            <p class="skills">Skills</p>
+        </div>
+        <div class="tabs-content">
+            <img src="./assets/images/Rectangle_1.png" alt="img-1" class="img-tab-content">
+            <img src="./assets/images/bussiness_man.png" alt="img-2" class="img-tab-content">
+            <img src="./assets/images/pictures_wall.jpeg" alt="img-3" class="img-tab-content">
+            <img src="./assets/images/kitchen.jpeg" alt="img-4" class="img-tab-content">
+            <img src="./assets/images/mobile_app.png" alt="img-5" class="img-tab-content">
+            <img src="./assets/images/issima_page.png" alt="img-6" class="img-tab-content">
+        </div>
+    </div>
+    <script>
+        function mostrarMensaje(){
+            window.alert("Downloading Document");
+        }
+        function red(){
+            location.href = "mailto:contact@me.com";
+        }
+    </script>
+</body>
+</html>

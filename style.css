@@ -1,0 +1,186 @@
+:root{
+    ---white: #ffffff;
+    --black: #000000;
+    --black-mate: #3D3D3D;
+    --dark-blue: #0C151D;
+    --gray-soft: #F1F2F4;
+    --gray: #A3ABB2;
+    --yellow: #FFE071;
+    --dark-blue-1: #171F26;
+    --lg: 46px;
+    --md: 22px;
+    --sm: 14px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+.main{
+    display: flex;
+    padding: 40px 0 40px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    row-gap: 30px;
+    background-color: var(--dark-blue);
+}
+.profile-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.perfil-background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(---white);
+    border-radius: 50%;
+    width: 215px;
+    height: 215px;
+    border: var(--yellow) solid 4px;
+}
+.perfil-background img{
+    width: 192px;
+    height: 192px;
+    border-radius: 50%;
+}
+.profile-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.name-profile{
+    color: var(--gray-soft);
+    font-size: var(--lg);
+    margin: 0;
+}
+.job-description{
+    color: var(--gray);
+    font-size: var(--md);
+    margin: 0;
+}
+.social-network{
+    display: flex;
+    justify-content: flex-start;
+    gap: 26px;
+    margin-top: 2%;
+}
+.profile-facts{
+    display: flex;
+    gap: 90px;
+    row-gap: 20px;
+    justify-content: space-around;
+}
+.facts-box{
+    color: var(--gray);
+    font-size: var(--md);
+    text-align: center;
+    display: flex;
+}
+.profile-buttons{
+    display: flex;
+    gap: 38px;
+    justify-content: space-between;    
+}
+.cv-button, .contact-button{
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 80px;
+    font-size: var(--md);
+
+}
+.cv-button{
+    background-color: var(--yellow);
+    color: var(--black-mate);
+}
+.contact-button{
+    background-color: var(--dark-blue-1);
+    color: var(--gray);
+}
+.tabs-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue-1);
+    width: 756px;
+    height: 116px;
+    border-radius: 20px;
+}
+.portfolio, .skills{
+    width: 349.595px;
+    height: 80px;
+    display: flex;
+    border-radius: 10px ;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray);
+    font-size: var(--md);
+}
+.portfolio{
+    background-color: var(--dark-blue);
+}
+.tabs-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.img-tab-content{
+    width: 362px;
+    height: 226px;
+    border-radius: 15px;
+}
+@media (max-width: 720px) {
+    .profile-info{
+        flex-direction: column;
+        font-size: var(--sm);
+    }
+    .profile-description{
+        align-items: center;
+    }
+    .profile-facts{
+        row-gap: auto;
+        gap: 20px;
+        width: 375px;
+    }
+    .facts-box{
+        font-size:var(--sm);
+    }
+    .profile-buttons{
+        width: 375px;
+        gap: 14px;
+        padding: auto 20px auto 20px ;
+
+    }
+    .cv-button, .contact-button{
+        width: 158px;
+        height: 44px;
+        font-size: var(--sm);
+    }
+    .cv-button img{
+        width: 16px;
+        height: 14px;
+    }
+    .tabs-buttons{
+        width: 330px;
+        height: 64px;
+        padding: 5px 2px;
+    }
+    .portfolio, .skills{
+        width: 154px;
+        height: 50.303px;
+        font-size: var(--sm);
+    }
+    .tabs-content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
